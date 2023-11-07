@@ -4,6 +4,8 @@
 <link rel="Stylesheet" type="text/css" href="../style.css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <title>booleanAlgebra</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -26,7 +28,7 @@ Results of a boolean expression can be represented by a truth table.
 
 </ul>
 <p>
-Example: The expression "Z=A'B + A+B'" has the following truth table:
+Example: The expression \(Z = A \overline B + A + \overline B\) has the following truth table:
 </p>
 
 <table>
@@ -91,7 +93,218 @@ Z
 </tbody>
 </table>
 
+<div id="Booleans Theorems"><h2 id="Booleans Theorems" class="header"><a href="#Booleans Theorems">Booleans Theorems</a></h2></div>
+<ul>
+<li>
+AND function
 
+<ul>
+<li>
+Theorem #1
+
+<ul>
+<li>
+\(X \cdot 0 = 0\)
+
+</ul>
+<li>
+Theorem #2
+
+<ul>
+<li>
+\(X \cdot 1 = X\)
+
+</ul>
+<li>
+Theorem #3
+
+<ul>
+<li>
+\(X \cdot X = X\)
+
+</ul>
+<li>
+Theorem #4
+
+<ul>
+<li>
+\(X \cdot \overline X = 0\)
+
+</ul>
+</ul>
+<li>
+OR function
+
+<ul>
+<li>
+Theorem #5
+
+<ul>
+<li>
+\(X + 0 = X\)
+
+</ul>
+<li>
+Theorem #6
+
+<ul>
+<li>
+\(X + 1 = 1\)
+
+</ul>
+<li>
+Theorem #7
+
+<ul>
+<li>
+\(X + X = X\)
+
+</ul>
+<li>
+Theorem #8
+
+<ul>
+<li>
+\(X + \overline X = 1\)
+
+</ul>
+</ul>
+<li>
+Invert Function
+
+<ul>
+<li>
+Theorem #9
+
+<ul>
+<li>
+\(\overline{\overline{X}} = X\)
+
+</ul>
+</ul>
+<li>
+Communative Law
+
+<ul>
+<li>
+Theorem #11 (AND Function)
+
+<ul>
+<li>
+\(X \cdot Y = Y \cdot X\)
+
+</ul>
+<li>
+Theorem #12 (OR Function)
+
+<ul>
+<li>
+\(X + Y = Y + X\)
+
+</ul>
+</ul>
+<li>
+Associative Law
+
+<ul>
+<li>
+Theorem #13 (AND Function)
+
+<ul>
+<li>
+\(X(YZ) = (XY)Z\)
+
+</ul>
+<li>
+Theorem #14 (OR Function)
+
+<ul>
+<li>
+\(X + (Y + Z) = (X + Y) + Z\)
+
+</ul>
+</ul>
+<li>
+Distributive Law
+
+<ul>
+<li>
+Theorem #15 (AND Function)
+
+<ul>
+<li>
+\(X(X + Z) = XY + XZ\)
+
+</ul>
+<li>
+Theorem #16 (OR Function)
+
+<ul>
+<li>
+\((X + Y)(W + Z) = XW + XZ + YW + YZ\)
+
+</ul>
+</ul>
+<li>
+Consensus Theorem
+
+<ul>
+<li>
+Theorem #16
+
+<ul>
+<li>
+\(X + \overline X Y = X + Y\)
+
+</ul>
+<li>
+Theorem #17
+
+<ul>
+<li>
+\(\overline X + XY + \overline X + Y\)
+
+</ul>
+<li>
+Theorem #18
+
+<ul>
+<li>
+\(X + \overline X \overline Y = X + \overline Y\)
+
+</ul>
+<li>
+Theorem #19
+
+<ul>
+<li>
+\(\overline X + X \overline Y = \overline X + \overline Y\)
+
+</ul>
+</ul>
+<li>
+DeMorgan's Theorems
+
+<ul>
+<li>
+Theorem #20
+
+<ul>
+<li>
+\(\overline{XY} = \overline X + \overline Y\)
+
+</ul>
+<li>
+Theorem #21
+
+<ul>
+<li>
+\(\overline{X+Y} = \overline X \cdot \overline Y\)
+
+</ul>
+</ul>
+</ul>
+		
 
 <p>
 <em>Copyright © 2023 Taylor Kerrihard. All Rights Reserved</em>
